@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(51, 48, 48);
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.stopwatch-cont {
+    border: 2px solid white;
+    width: 60%;
+    margin: auto;
+    border-radius: 30px;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    font-family: cursive;
+    color: white;
+}
+
+p {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin: 20px 0px 15px 0px;
+}
+
+#stopwatch {
+    font-size: 6rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+button {
+    width: 100px;
+    font-size: 22px;
+    height: 3rem;
+    margin: 15px 30px;
+    border-radius: 50px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+#buttons {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding-left: 0;
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 35px;
+    }
+    button {
+        font-size: 20px;
+        height: 30px;
+        margin: 10px;
+    }
+    #stopwatch {
+        font-size: 50px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .stopwatch-cont {
+        border: 2px solid white;
+        width: 90%;
+        margin: auto;
+        margin-top: 100px;
+        padding: 20px;
+    }
+    #buttons {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0;
+        margin-top: 15px;
+    }
+    p {
+        font-size: 18px;
+        margin: 8px 0;
+        margin-bottom: 15px;
+    }
+}
